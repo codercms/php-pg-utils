@@ -1,0 +1,39 @@
+{
+    "name": "erg/pg-utils",
+    "description": "Utilities set to work with PostgreSQL types",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry K.",
+            "email": "coder1994@gmail.com",
+            "homepage": "https://dmitry-k.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Erg\\PgUtils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

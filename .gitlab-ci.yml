@@ -1,0 +1,27 @@
+stages:
+  - test
+  - publish
+
+test:
+  image: ${BASE_IMAGE}:latest
+  stage: test
+  script:
+    - composer install --ansi
+    - php vendor/squizlabs/php_codesniffer/bin/phpcs --standard=PSR2 src/
+    - php vendor/bin/phpunit --colors=always
+  tags:
+    - back
+
+publish:
+  stage: publish
+  before_script:
+    - apk add curl
+  script:
+    - 'curl --silent --show-error --fail --header "Job-Token: ${CI_JOB_TOKEN}" --data tag=${CI_COMMIT_TAG} "${CI_API_V4_URL}/projects/$CI_PROJECT_ID/packages/composer"'
+  only:
+    - tags
+  tags:
+    - back
+
+variables:
+  BASE_IMAGE: ${CI_REGISTRY}/${CI_PROJECT_NAMESPACE}/back-php-image
