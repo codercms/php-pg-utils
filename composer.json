@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Erg\\PgUtils\\": "src/"
+            "Codercms\\PgUtils\\": "src/"
         }
     },
     "autoload-dev": {

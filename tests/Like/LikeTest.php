@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Like;
 
-use Erg\PgUtils\Like\Like;
+use Codercms\PgUtils\Like\Like;
 use PHPUnit\Framework\TestCase;
 
 class LikeTest extends TestCase

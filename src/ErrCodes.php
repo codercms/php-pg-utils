@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Erg\PgUtils;
+namespace Codercms\PgUtils;
 
 /**
  * Коды ошибок при работе с PostgreSQL

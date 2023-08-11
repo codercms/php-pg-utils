@@ -10,8 +10,8 @@ declare(strict_types=1);
 
 namespace Tests\Range;
 
-use Erg\PgUtils\Range\DateRangeParser;
-use Erg\PgUtils\Range\DateRange;
+use Codercms\PgUtils\Range\DateRangeParser;
+use Codercms\PgUtils\Range\DateRange;
 use PHPUnit\Framework\TestCase;
 
 class DateRangeParserTest extends TestCase

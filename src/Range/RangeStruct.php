@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Erg\PgUtils\Range;
+namespace Codercms\PgUtils\Range;
 
 class RangeStruct
 {

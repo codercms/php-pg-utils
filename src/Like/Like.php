@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Erg\PgUtils\Like;
+namespace Codercms\PgUtils\Like;
 
 use function str_replace;
 

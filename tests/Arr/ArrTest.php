@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Tests\Arr;
 
-use Erg\PgUtils\Arr\Arr;
+use Codercms\PgUtils\Arr\Arr;
 use PHPUnit\Framework\TestCase;
 
 class ArrTest extends TestCase

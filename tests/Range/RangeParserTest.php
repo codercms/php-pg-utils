@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Tests\Range;
 
-use Erg\PgUtils\Range\RangeParser;
+use Codercms\PgUtils\Range\RangeParser;
 use PHPUnit\Framework\TestCase;
 
 class RangeParserTest extends TestCase

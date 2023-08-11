@@ -8,7 +8,7 @@
 
 declare(strict_types=1);
 
-namespace Erg\PgUtils\Arr;
+namespace Codercms\PgUtils\Arr;
 
 use InvalidArgumentException;
 
