@@ -1,5 +1,5 @@
 {
-    "name": "erg/pg-utils",
+    "name": "codercms/pg-utils",
     "description": "Utilities set to work with PostgreSQL types",
     "type": "library",
     "license": "MIT",
