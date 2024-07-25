@@ -112,6 +112,30 @@ class Arr
     }
 
     /**
+     * For Postgres int array
+     *
+     * @param array<int|null> $items
+     * @param bool $allowNulls
+     * @return string
+     */
+    public static function asIntArr(array $items, bool $allowNulls = false): string
+    {
+        $parts = array_map(static function (int|null $item) use ($allowNulls): string {
+            if ($item === null) {
+                if (!$allowNulls) {
+                    throw new InvalidArgumentException("Null value not allowed");
+                }
+
+                return 'NULL';
+            }
+
+            return (string)($item);
+        }, $items);
+
+        return '{' . implode(',', $parts) . '}';
+    }
+
+    /**
      * Suitable for int, float/decimal, uuid
      * It's UNSAFE to pass values with commas, braces, quotes
      *
